@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package mysqlCenter.protoBuf;
+
+option java_package="mysqlCenter.protoBuf";
+option java_outer_classname="mysqlBuf";
+
+message Buf {
+	//0.操作类型
+	string operateType = 1;
+	
+	//1.用户名
+	string userName = 2;
+	
+	//2.密码
+	string password = 3;
+}
